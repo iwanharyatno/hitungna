@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <title>HitungNa</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header>
+      <h1 class="header-title">HitungNa</h1>
+      <p class="header-description">Membantumu memperkirakan nilai-nilai matkul biar bisa dapet grade yang diinginkan.</p>
+    </header>
+    <div class="result">
+      <p id="resultPredicate" class="color-green">A</p>
+      <p id="resultNumber">100.0</p>
+    </div>
+    <main>
+      <div class="sliders">
+        <h2>Nilai</h2>
+        <label for="sliderPresensiScore">Presensi</label>
+        <div class="slider-container">
+          <input class="slider" id="sliderPresensiScore" data-field="#fieldPresensiScore" type="range" value="100" min="0" step="1" max="100">
+          <input id="fieldPresensiScore" type="number" value="100">
+          <span>%</span>
+        </div>
+        <label for="sliderTugasScore">Tugas</label>
+        <div class="slider-container">
+          <input class="slider" id="sliderTugasScore" data-field="#fieldTugasScore" type="range" value="100" min="0" step="1" max="100">
+          <input id="fieldTugasScore" type="number" value="100">
+          <span>%</span>
+        </div>
+        <label for="sliderUTSScore">UTS</label>
+        <div class="slider-container">
+          <input class="slider" id="sliderUTSScore" data-field="#fieldUTSScore" type="range" value="100" min="0" step="1" max="100">
+          <input id="fieldUTSScore" type="number" value="100">
+          <span>%</span>
+        </div>
+        <label for="sliderUASScore">UAS</label>
+        <div class="slider-container">
+          <input class="slider" id="sliderUASScore" data-field="#fieldUASScore" type="range" value="100" min="0" step="1" max="100">
+          <input id="fieldUASScore" type="number" value="100">
+          <span>%</span>
+        </div>
+      </div>
+      <div class="sliders">
+        <h2>Kontrak Perkuliahan</h2>
+        <label for="sliderPresensiContract">Presensi</label>
+        <div class="slider-container">
+          <input class="slider" id="sliderPresensiContract" data-field="#fieldPresensiContract" type="range" value="10" min="0" step="1" max="100">
+          <input id="fieldPresensiContract" type="number" value="10">
+          <span>%</span>
+        </div>
+        <label for="sliderTugasContract">Tugas</label>
+        <div class="slider-container">
+          <input class="slider" id="sliderTugasContract" data-field="#fieldTugasContract" type="range" value="20" min="0" step="1" max="100">
+          <input id="fieldTugasContract" type="number" value="20">
+          <span>%</span>
+        </div>
+        <label for="sliderUTSContract">UTS</label>
+        <div class="slider-container">
+          <input class="slider" id="sliderUTSContract" data-field="#fieldUTSContract" type="range" value="30" min="0" step="1" max="100">
+          <input id="fieldUTSContract" type="number" value="30">
+          <span>%</span>
+        </div>
+        <label for="sliderUASContract">UAS</label>
+        <div class="slider-container">
+          <input class="slider" id="sliderUASContract" type="range" data-field="#fieldUASContract" value="40" min="0" step="1" max="100">
+          <input id="fieldUASContract" type="number" value="40">
+          <span>%</span>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p>Made with &hearts; by <a target="_blank" href="https://github.com/iwanharyatno">Iwan Haryatno</a></p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
